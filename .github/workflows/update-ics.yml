@@ -31,7 +31,6 @@ jobs:
           node-version: 16
 
       - name: make setup
-        if: steps.npm-cache.outputs.cache-hit != 'true'
         run: make setup
 
       - run: make run
