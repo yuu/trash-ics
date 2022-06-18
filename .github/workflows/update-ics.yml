@@ -48,6 +48,7 @@ jobs:
           user_email: yuu@users.noreply.github.com
 
       - name: post status to Discord
+        if: failure()
         uses: sarisia/actions-status-discord@v1
         with:
           webhook: ${{ secrets.DISCORD_WEBHOOK }}
