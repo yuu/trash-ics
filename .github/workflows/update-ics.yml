@@ -35,3 +35,15 @@ jobs:
         run: make setup
 
       - run: make run
+
+      - name: deploy to public branch
+        uses: peaceiris/actions-gh-pages@v3.8.0
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist
+          publish_branch: public
+          keep_files: true
+          commit_message: update ics
+          cname: flutia.dev
+          user_name: [bot]
+          user_email: yuu@users.noreply.github.com
