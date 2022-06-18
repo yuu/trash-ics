@@ -47,3 +47,9 @@ jobs:
           cname: flutia.dev
           user_name: [bot]
           user_email: yuu@users.noreply.github.com
+
+      - name: post status to Discord
+        uses: sarisia/actions-status-discord@v1
+        with:
+          webhook: ${{ secrets.DISCORD_WEBHOOK }}
+          title: trash ics - update ics
