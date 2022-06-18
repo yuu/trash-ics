@@ -45,7 +45,7 @@ jobs:
           keep_files: true
           commit_message: update ics
           cname: flutia.dev
-          user_name: [bot]
+          user_name: '[bot]'
           user_email: yuu@users.noreply.github.com
 
       - name: post status to Discord
