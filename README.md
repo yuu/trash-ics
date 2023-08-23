@@ -11,6 +11,6 @@ provide trash schedule via ical
 
 ## Usage
 
-https://flutia.dev/trash-ics/numazu.ical
+https://ical.yuuxzy.io/numazu.ical
 
 ## Requirements
