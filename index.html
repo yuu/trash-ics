@@ -12,10 +12,20 @@
         <meta name="distribution" content="Global">
 
         <title>ゴミ回収スケジュール</title>
+
+        <script type="text/javascript">
+            function onClipboard(event) {
+                const link = event.target.getAttribute('data-link');
+                navigator.clipboard.writeText(link);
+            }
+        </script>
     </head>
     <body>
         <ul>
-            <li><a href="https://ical.yuuxzy.io/numazu.ical">沼津</li>
+            <li>
+                <a href="https://ical.yuuxzy.io/numazu.ical">沼津 白銀町</a>
+                <button onclick="onClipboard(event)" data-link="https://ical.yuuxzy.io/numazu.ical">クリップボードにコピー</button>
+            </li>
         </ul>
     </body>
 </html>
