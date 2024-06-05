@@ -43,7 +43,7 @@ jobs:
           publish_branch: public
           keep_files: true
           commit_message: update ics
-          cname: flutia.dev
+          cname: ical.yuuxzy.io
           user_name: '[bot]'
           user_email: yuu@users.noreply.github.com
 
