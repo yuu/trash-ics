@@ -20,3 +20,4 @@ setup: ## install library
 
 run: ## create ical
 	@node src/index.js --assets assets --output dist
+	@cp src/index.html dist
